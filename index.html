@@ -65,8 +65,8 @@
             text-align: center;
         }
 
-        /* Background Visual Semisinematik (Bisa Gambar atau Placeholder Video) */
-        .hero-bg {
+        /* --- Video Placement Latar Belakang (DIKEMBALIKAN) --- */
+        .hero-video-bg {
             position: absolute;
             top: 0;
             left: 0;
@@ -74,10 +74,10 @@
             height: 100%;
             object-fit: cover;
             z-index: 1;
-            filter: grayscale(100%) brightness(40%); /* Gelap dan monokrom agar estetik */
+            filter: grayscale(100%) brightness(35%); /* Gelap dan monokrom agar estetik & teks navigasi kontras */
         }
 
-        /* Konten Utama di Tengah Layar (Sudah Bersih Tanpa Teks image_46c42a.jpg) */
+        /* Konten Utama di Tengah Layar (BERSIH murni tanpa kotak hitam melayang) */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -179,10 +179,14 @@
 
     <!-- Rumpun Utama Layar Home -->
     <main class="hero-section">
-        <!-- Gambar Latar Belakang Sinematik (Ganti tautan source ini dengan file video/gambar Anda sendiri jika perlu) -->
-        <img class="hero-bg" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="Background Cinema">
+        <!-- VIDEO BACKROUND PLACEMENT (Silakan ganti video.mp4 dengan path/link file video asli Anda) -->
+        <video class="hero-video-bg" autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+            <!-- Fallback jika video gagal load -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-dynamic-cinematic-video-cuts-41145-large.mp4" type="video/mp4">
+        </video>
 
-        <!-- Konten Tengah yang Sudah Bersih Bersih -->
+        <!-- Konten Tengah: Murni Bersih Tanpa Box Hitam Melayang -->
         <div class="hero-content">
             <h2 class="hero-headline">Video Boman</h2>
             <a href="portofolio.html" class="cta-button">View Portfolio</a>
