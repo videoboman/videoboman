@@ -65,7 +65,7 @@
             text-align: center;
         }
 
-        /* --- Video Placement Latar Belakang (DIKEMBALIKAN) --- */
+        /* --- Video Latar Belakang Tetap Pertahankan --- */
         .hero-video-bg {
             position: absolute;
             top: 0;
@@ -74,27 +74,18 @@
             height: 100%;
             object-fit: cover;
             z-index: 1;
-            filter: grayscale(100%) brightness(35%); /* Gelap dan monokrom agar estetik & teks navigasi kontras */
+            filter: grayscale(100%) brightness(40%); /* Gelap dan monokrom agar estetik */
         }
 
-        /* Konten Utama di Tengah Layar (BERSIH murni tanpa kotak hitam melayang) */
+        /* Konten Utama di Tengah Layar */
         .hero-content {
             position: relative;
             z-index: 2;
             max-width: 800px;
             padding: 0 20px;
         }
-        
-        .hero-headline {
-            font-size: 48px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            margin-bottom: 25px;
-            line-height: 1.2;
-        }
 
-        /* Tombol Aksi Minimalis Berbentuk Oval */
+        /* Tombol Utama Tetap Ada */
         .cta-button {
             display: inline-block;
             background-color: transparent;
@@ -152,13 +143,11 @@
             header { padding: 20px; }
             header h1 { font-size: 18px; }
             nav a { margin-left: 15px; font-size: 12px; }
-            .hero-headline { font-size: 32px; letter-spacing: 4px; }
         }
 
         @media (max-width: 480px) {
             header { flex-direction: column; gap: 12px; padding: 20px 10px; }
             nav a { margin: 0 8px; font-size: 11px; }
-            .hero-headline { font-size: 26px; letter-spacing: 3px; }
             .cta-button { padding: 12px 30px; font-size: 11px; }
             .footer-socials { gap: 30px; }
         }
@@ -179,16 +168,15 @@
 
     <!-- Rumpun Utama Layar Home -->
     <main class="hero-section">
-        <!-- VIDEO BACKROUND PLACEMENT (Silakan ganti video.mp4 dengan path/link file video asli Anda) -->
+        <!-- VIDEO BACKROUND PLACEMENT (Tetap Aktif) -->
         <video class="hero-video-bg" autoplay loop muted playsinline>
             <source src="video.mp4" type="video/mp4">
-            <!-- Fallback jika video gagal load -->
+            <!-- Fallback video jika file lokal belum di-load -->
             <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-dynamic-cinematic-video-cuts-41145-large.mp4" type="video/mp4">
         </video>
 
-        <!-- Konten Tengah: Murni Bersih Tanpa Box Hitam Melayang -->
+        <!-- KONTEN TENGAH: Hanya menyisakan tombol tanpa tulisan kotak melayang dari image_472dbb.png -->
         <div class="hero-content">
-            <h2 class="hero-headline">Video Boman</h2>
             <a href="portofolio.html" class="cta-button">View Portfolio</a>
         </div>
     </main>
