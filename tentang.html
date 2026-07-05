@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang | Video Boman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        header {
+            background-color: #000000;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #111111;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #ffffff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover { color: #888888; }
+
+        .main-content {
+            padding: 100px 20px;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+        .page-title {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 50px;
+        }
+        .bio-text {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 2;
+            color: #cccccc;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        .bio-text highlight {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: #000000;
+            border-top: 1px solid #111111;
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 100px;
+        }
+        .footer-socials { margin-bottom: 25px; display: flex; justify-content: center; gap: 40px; }
+        .footer-socials a { color: #ffffff; font-size: 24px; text-decoration: none; transition: all 0.3s ease; }
+        .footer-socials a:hover { color: #888888; transform: translateY(-3px); }
+        .footer-copyright { font-size: 11px; font-weight: 300; color: #444444; letter-spacing: 2px; text-transform: uppercase; margin: 0; }
+
+        @media (max-width: 1024px) { header { padding: 25px 30px; } }
+        @media (max-width: 768px) {
+            header { padding: 20px; } header h1 { font-size: 18px; letter-spacing: 2px; } nav a { margin-left: 15px; font-size: 12px; letter-spacing: 1px; }
+            .main-content { padding: 60px 20px; } .page-title { font-size: 20px; }
+        }
+        @media (max-width: 480px) {
+            header { flex-direction: column; gap: 15px; padding: 20px 10px; } nav a { margin: 0 10px; font-size: 11px; }
+            .bio-text { font-size: 14px; line-height: 1.8; text-align: center; }
+            .footer-socials { gap: 30px; } .footer-socials a { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Video Boman</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2 class="page-title">About Me</h2>
+        <p class="bio-text">
+            Saya adalah seorang profesional di industri media kreatif dengan fokus keahlian sebagai <highlight>Supervisor Produksi Video</highlight> dan <highlight>Content Consultant</highlight>. Peran saya berpusat pada perancangan arsitektur konten visual yang tidak hanya estetis, tetapi juga memiliki dampak strategis yang kuat bagi pertumbuhan sebuah brand.
+        </p>
+        <p class="bio-text">
+            Melalui integrasi keahlian teknis editing dan pemanfaatan sistem kecerdasan buatan (<highlight>AI Content Pipeline</highlight>), saya membangun ekosistem produksi yang efisien, adaptif, serta berorientasi pada kebutuhan bisnis modern, baik dalam skala konsumen retail maupun kemitraan B2B corporasi.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/videoboman" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@jasaeditvideo" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/6285171191244" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 Video Boman. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
